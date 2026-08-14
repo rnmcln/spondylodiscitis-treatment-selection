@@ -1,0 +1,241 @@
+query_id,data_year,hauptdiagnose,prozedur,entlassungsgrund,other_filter,register_read
+M1,2019,M46.20-M46.59,core 174 codes,(none),Intensivfaelle=mit,Info
+M2,2019,M46.20-M46.59,(none),(none),Intensivfaelle=mit,Info
+M3,2019,M46.20-M46.59,core 174 codes,(none),Beatmungsstunden Von=96,Info
+M4,2019,M46.20-M46.59,(none),(none),Beatmungsstunden Von=96,Info
+M5,2019,M46.20-M46.59,core 174 codes,(none),weitere Prozedur=5-983,Info
+Q0,2019,M46.20-M46.59 (39 codes; M46.31 absent from 2019 popup - zero-case code immaterial to OR filter),(none),(none),(none),Info
+Q1,2019,M46.20-M46.59 (39 codes),(none),(none),(none),Info
+Q2,2019,M46.20-M46.59,core 174 codes,(none),(none),Info
+Q3,2019,M46.20-M46.59,(none),07 Tod,(none),Info
+Q4,2019,M46.20-M46.59,core 174 codes (2019 OPS),07 Tod,(none),Info
+S1,2019,M46.20-M46.59,core+5-032 (199 codes),(none),(none),Info
+S2,2019,M46.20-M46.59,core+5-032 (199 codes),07 Tod,(none),Info
+S3,2019,M46.20-M46.59,instrumented 87 codes,(none),(none),Info
+S4,2019,M46.20-M46.59,instrumented 87 codes,07 Tod,(none),Info
+M1,2020,M46.20-M46.59,core 180 codes,(none),Intensivfaelle=mit,Info
+M2,2020,M46.20-M46.59,(none),(none),Intensivfaelle=mit,Info
+M3,2020,M46.20-M46.59,core 180 codes,(none),Beatmungsstunden Von=96,Info
+M4,2020,M46.20-M46.59,(none),(none),Beatmungsstunden Von=96,Info
+M5,2020,M46.20-M46.59,core 180 codes,(none),weitere Prozedur=5-983,Info
+Q0,2020,M46.20-M46.59 (40 codes verified),(none),(none),(none),Info
+Q1,2020,M46.20-M46.59,(none),(none),(none),Info
+Q2,2020,M46.20-M46.59,core 180 codes,(none),(none),Info
+Q3,2020,M46.20-M46.59,(none),07 Tod,(none),Info
+Q4,2020,M46.20-M46.59,core 180 codes (2020 OPS has fewer terminal subcodes),07 Tod,(none),Info
+S1,2020,M46.20-M46.59,core+5-032 (205 codes),(none),(none),Info
+S2,2020,M46.20-M46.59,core+5-032 (205 codes),07 Tod,(none),Info
+S3,2020,M46.20-M46.59,instrumented 87 codes (5-835;5-836;5-837;5-83b),(none),(none),Info
+S4,2020,M46.20-M46.59,instrumented 87 codes,07 Tod,(none),Info
+M1,2021,M46.20-M46.59,core 218 codes,(none),Intensivfaelle=mit,Info
+M2,2021,M46.20-M46.59,(none),(none),Intensivfaelle=mit,Info
+M3,2021,M46.20-M46.59,core 218 codes,(none),Beatmungsstunden Von=96,Info
+M4,2021,M46.20-M46.59,(none),(none),Beatmungsstunden Von=96,Info
+M5,2021,M46.20-M46.59,core 218 codes,(none),weitere Prozedur=5-983,Info
+Q0,2021,M46.20-M46.59 (40 codes verified),(none),(none),(none),Info
+Q1,2021,M46.20-M46.59,(none),(none),(none),Info
+Q2,2021,M46.20-M46.59,core 218 codes,(none),(none),Info
+Q3,2021,M46.20-M46.59,(none),07 Tod,(none),Info
+Q4,2021,M46.20-M46.59,core 218 codes,07 Tod,(none),Info
+S1,2021,M46.20-M46.59,core+5-032 (243 codes),(none),(none),Info
+S2,2021,M46.20-M46.59,core+5-032 (243 codes),07 Tod,(none),Info
+S3,2021,M46.20-M46.59,instrumented 127 codes,(none),(none),Info
+S4,2021,M46.20-M46.59,instrumented 127 codes,07 Tod,(none),Info
+M1,2022,M46.20-M46.59,core 218 codes,(none),Intensivfaelle=mit,Info
+M2,2022,M46.20-M46.59,(none),(none),Intensivfaelle=mit,Info
+M3,2022,M46.20-M46.59,core 218 codes,(none),Beatmungsstunden Von=96,Info
+M4,2022,M46.20-M46.59,(none),(none),Beatmungsstunden Von=96,Info
+M5,2022,M46.20-M46.59,core 218 codes,(none),weitere Prozedur=5-983,Info
+Q0,2022,M46.20-M46.59 (40 codes verified),(none),(none),(none),Info
+Q1,2022,M46.20-M46.59,(none),(none),(none),Info
+Q2,2022,M46.20-M46.59,core 218 codes,(none),(none),Info
+Q3,2022,M46.20-M46.59,(none),07 Tod,(none),Info
+Q4,2022,M46.20-M46.59,core 218 codes (9 families all terminal subcodes),07 Tod,(none),Info
+S1,2022,M46.20-M46.59,core+5-032 (243 codes),(none),(none),Info
+S2,2022,M46.20-M46.59,core+5-032 (243 codes),07 Tod,(none),Info
+S3,2022,M46.20-M46.59,instrumented 129 codes (5-835;5-836;5-837;5-83b),(none),(none),Info
+S4,2022,M46.20-M46.59,instrumented 129 codes,07 Tod,(none),Info
+M1,2023,M46.20-M46.59,core 212 codes,(none),Intensivfaelle=mit,Info
+M2,2023,M46.20-M46.59,(none),(none),Intensivfaelle=mit,Info
+M3,2023,M46.20-M46.59,core 212 codes,(none),Beatmungsstunden Von=96,Info
+M4,2023,M46.20-M46.59,(none),(none),Beatmungsstunden Von=96,Info
+M5,2023,M46.20-M46.59,core 212 codes,(none),weitere Prozedur=5-983,Info
+Q0,2023,M46.20-M46.59 (40 five-digit codes),(none),(none),(none),Info
+Q1,2023,M46.20-M46.59 (40 five-digit codes),(none),(none),(none),Info
+Q2,2023,M46.20-M46.59,core 212 codes,(none),(none),Info
+Q3,2023,M46.20-M46.59,(none),07 Tod,(none),Info
+Q4,2023,M46.20-M46.59,core 212 codes (5-033;5-830;5-831;5-832;5-835;5-836;5-837;5-839;5-83b all terminal subcodes),07 Tod,(none),Info
+S1,2023,M46.20-M46.59,core+5-032 (237 codes),(none),(none),Info
+S2,2023,M46.20-M46.59,core+5-032 (237 codes),07 Tod,(none),Info
+S3,2023,M46.20-M46.59,instrumented 124 codes (5-835;5-836;5-837;5-83b),(none),(none),Info
+S4,2023,M46.20-M46.59,instrumented 124 codes,07 Tod,(none),Info
+M1,2024,M46.20-M46.59,core 214 codes,(none),Intensivfaelle=mit,Info
+M2,2024,M46.20-M46.59,(none),(none),Intensivfaelle=mit,Info
+M3,2024,M46.20-M46.59,core 214 codes,(none),Beatmungsstunden Von=96,Info
+M4,2024,M46.20-M46.59,(none),(none),Beatmungsstunden Von=96,Info
+M5,2024,M46.20-M46.59,core 214 codes,(none),weitere Prozedur=5-983,Info
+Q0,2024,M46.20-M46.59 (39 codes; M46.31 absent - zero cases),(none),(none),(none),Info
+Q1,2024,M46.20-M46.59,(none),(none),(none),Info
+Q2,2024,M46.20-M46.59,core 214 codes,(none),(none),Info
+Q3,2024,M46.20-M46.59,(none),07 Tod,(none),Info
+Q4,2024,M46.20-M46.59,core 214 codes (2024 OPS),07 Tod,(none),Info
+S1,2024,M46.20-M46.59,core+5-032 (239 codes),(none),(none),Info
+S2,2024,M46.20-M46.59,core+5-032 (239 codes),07 Tod,(none),Info
+S3,2024,M46.20-M46.59,instrumented 127 codes,(none),(none),Info
+S4,2024,M46.20-M46.59,instrumented 127 codes,07 Tod,(none),Info
+N1,2019,M46.20-M46.59,(none),(none),(none),Nebendiagnosen
+N2,2019,M46.20-M46.59,core 174 codes,(none),(none),Nebendiagnosen
+N3,2019,M46.20-M46.59,(none),07 Tod,(none),Nebendiagnosen
+N4,2019,M46.20-M46.59,core 174 codes,07 Tod,(none),Nebendiagnosen
+CA41c,2019,M46.20-M46.59,(none),(none),Nebendiagnose=A41.- sepsis,Info
+CA41o,2019,M46.20-M46.59,core 174 codes,(none),Nebendiagnose=A41.- sepsis,Info
+CG82c,2019,M46.20-M46.59,(none),(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CG82o,2019,M46.20-M46.59,core 174 codes,(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CE11c,2019,M46.20-M46.59,(none),(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CE11o,2019,M46.20-M46.59,core 174 codes,(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CI50c,2019,M46.20-M46.59,(none),(none),Nebendiagnose=I50.- heart failure,Info
+CI50o,2019,M46.20-M46.59,core 174 codes,(none),Nebendiagnose=I50.- heart failure,Info
+CN18c,2019,M46.20-M46.59,(none),(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CN18o,2019,M46.20-M46.59,core 174 codes,(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CA41cD,2019,M46.20-M46.59,(none),07 Tod,Nebendiagnose=A41.- sepsis,Info
+CA41oD,2019,M46.20-M46.59,core 174 codes,07 Tod,Nebendiagnose=A41.- sepsis,Info
+D06+08c,2019,M46.20-M46.59,(none),06+08 Verlegung,(none),Info
+D06+08o,2019,M46.20-M46.59,core 174 codes,06+08 Verlegung,(none),Info
+D09c,2019,M46.20-M46.59,(none),09 Rehabilitation,(none),Info
+D09o,2019,M46.20-M46.59,core 174 codes,09 Rehabilitation,(none),Info
+D10c,2019,M46.20-M46.59,(none),10 Pflegeeinrichtung,(none),Info
+D10o,2019,M46.20-M46.59,core 174 codes,10 Pflegeeinrichtung,(none),Info
+D11c,2019,M46.20-M46.59,(none),11 Hospiz,(none),Info
+D11o,2019,M46.20-M46.59,core 174 codes,11 Hospiz,(none),Info
+N1,2020,M46.20-M46.59,(none),(none),(none),Nebendiagnosen
+N2,2020,M46.20-M46.59,core 180 codes,(none),(none),Nebendiagnosen
+N3,2020,M46.20-M46.59,(none),07 Tod,(none),Nebendiagnosen
+N4,2020,M46.20-M46.59,core 180 codes,07 Tod,(none),Nebendiagnosen
+CA41c,2020,M46.20-M46.59,(none),(none),Nebendiagnose=A41.- sepsis,Info
+CA41o,2020,M46.20-M46.59,core 180 codes,(none),Nebendiagnose=A41.- sepsis,Info
+CG82c,2020,M46.20-M46.59,(none),(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CG82o,2020,M46.20-M46.59,core 180 codes,(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CE11c,2020,M46.20-M46.59,(none),(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CE11o,2020,M46.20-M46.59,core 180 codes,(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CI50c,2020,M46.20-M46.59,(none),(none),Nebendiagnose=I50.- heart failure,Info
+CI50o,2020,M46.20-M46.59,core 180 codes,(none),Nebendiagnose=I50.- heart failure,Info
+CN18c,2020,M46.20-M46.59,(none),(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CN18o,2020,M46.20-M46.59,core 180 codes,(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CA41cD,2020,M46.20-M46.59,(none),07 Tod,Nebendiagnose=A41.- sepsis,Info
+CA41oD,2020,M46.20-M46.59,core 180 codes,07 Tod,Nebendiagnose=A41.- sepsis,Info
+D06+08c,2020,M46.20-M46.59,(none),06+08 Verlegung,(none),Info
+D06+08o,2020,M46.20-M46.59,core 180 codes,06+08 Verlegung,(none),Info
+D09c,2020,M46.20-M46.59,(none),09 Rehabilitation,(none),Info
+D09o,2020,M46.20-M46.59,core 180 codes,09 Rehabilitation,(none),Info
+D10c,2020,M46.20-M46.59,(none),10 Pflegeeinrichtung,(none),Info
+D10o,2020,M46.20-M46.59,core 180 codes,10 Pflegeeinrichtung,(none),Info
+D11c,2020,M46.20-M46.59,(none),11 Hospiz,(none),Info
+D11o,2020,M46.20-M46.59,core 180 codes,11 Hospiz,(none),Info
+N1,2021,M46.20-M46.59,(none),(none),(none),Nebendiagnosen
+N2,2021,M46.20-M46.59,core 218 codes,(none),(none),Nebendiagnosen
+N3,2021,M46.20-M46.59,(none),07 Tod,(none),Nebendiagnosen
+N4,2021,M46.20-M46.59,core 218 codes,07 Tod,(none),Nebendiagnosen
+CA41c,2021,M46.20-M46.59,(none),(none),Nebendiagnose=A41.- sepsis,Info
+CA41o,2021,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=A41.- sepsis,Info
+CG82c,2021,M46.20-M46.59,(none),(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CG82o,2021,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CE11c,2021,M46.20-M46.59,(none),(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CE11o,2021,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CI50c,2021,M46.20-M46.59,(none),(none),Nebendiagnose=I50.- heart failure,Info
+CI50o,2021,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=I50.- heart failure,Info
+CN18c,2021,M46.20-M46.59,(none),(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CN18o,2021,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CA41cD,2021,M46.20-M46.59,(none),07 Tod,Nebendiagnose=A41.- sepsis,Info
+CA41oD,2021,M46.20-M46.59,core 218 codes,07 Tod,Nebendiagnose=A41.- sepsis,Info
+D06+08c,2021,M46.20-M46.59,(none),06+08 Verlegung,(none),Info
+D06+08o,2021,M46.20-M46.59,core 218 codes,06+08 Verlegung,(none),Info
+D09c,2021,M46.20-M46.59,(none),09 Rehabilitation,(none),Info
+D09o,2021,M46.20-M46.59,core 218 codes,09 Rehabilitation,(none),Info
+D10c,2021,M46.20-M46.59,(none),10 Pflegeeinrichtung,(none),Info
+D10o,2021,M46.20-M46.59,core 218 codes,10 Pflegeeinrichtung,(none),Info
+D11c,2021,M46.20-M46.59,(none),11 Hospiz,(none),Info
+D11o,2021,M46.20-M46.59,core 218 codes,11 Hospiz,(none),Info
+N1,2022,M46.20-M46.59,(none),(none),(none),Nebendiagnosen
+N2,2022,M46.20-M46.59,core 218 codes,(none),(none),Nebendiagnosen
+N3,2022,M46.20-M46.59,(none),07 Tod,(none),Nebendiagnosen
+N4,2022,M46.20-M46.59,core 218 codes,07 Tod,(none),Nebendiagnosen
+CA41c,2022,M46.20-M46.59,(none),(none),Nebendiagnose=A41.- sepsis,Info
+CA41o,2022,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=A41.- sepsis,Info
+CG82c,2022,M46.20-M46.59,(none),(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CG82o,2022,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CE11c,2022,M46.20-M46.59,(none),(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CE11o,2022,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CI50c,2022,M46.20-M46.59,(none),(none),Nebendiagnose=I50.- heart failure,Info
+CI50o,2022,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=I50.- heart failure,Info
+CN18c,2022,M46.20-M46.59,(none),(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CN18o,2022,M46.20-M46.59,core 218 codes,(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CA41cD,2022,M46.20-M46.59,(none),07 Tod,Nebendiagnose=A41.- sepsis,Info
+CA41oD,2022,M46.20-M46.59,core 218 codes,07 Tod,Nebendiagnose=A41.- sepsis,Info
+D06+08c,2022,M46.20-M46.59,(none),06+08 Verlegung,(none),Info
+D06+08o,2022,M46.20-M46.59,core 218 codes,06+08 Verlegung,(none),Info
+D09c,2022,M46.20-M46.59,(none),09 Rehabilitation,(none),Info
+D09o,2022,M46.20-M46.59,core 218 codes,09 Rehabilitation,(none),Info
+D10c,2022,M46.20-M46.59,(none),10 Pflegeeinrichtung,(none),Info
+D10o,2022,M46.20-M46.59,core 218 codes,10 Pflegeeinrichtung,(none),Info
+D11c,2022,M46.20-M46.59,(none),11 Hospiz,(none),Info
+D11o,2022,M46.20-M46.59,core 218 codes,11 Hospiz,(none),Info
+N1,2023,M46.20-M46.59,(none),(none),(none),Nebendiagnosen
+N2,2023,M46.20-M46.59,core 212 codes,(none),(none),Nebendiagnosen
+N3,2023,M46.20-M46.59,(none),07 Tod,(none),Nebendiagnosen
+N4,2023,M46.20-M46.59,core 212 codes,07 Tod,(none),Nebendiagnosen
+CA41c,2023,M46.20-M46.59,(none),(none),Nebendiagnose=A41.- sepsis,Info
+CA41o,2023,M46.20-M46.59,core 212 codes,(none),Nebendiagnose=A41.- sepsis,Info
+CG82c,2023,M46.20-M46.59,(none),(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CG82o,2023,M46.20-M46.59,core 212 codes,(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CE11c,2023,M46.20-M46.59,(none),(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CE11o,2023,M46.20-M46.59,core 212 codes,(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CI50c,2023,M46.20-M46.59,(none),(none),Nebendiagnose=I50.- heart failure,Info
+CI50o,2023,M46.20-M46.59,core 212 codes,(none),Nebendiagnose=I50.- heart failure,Info
+CN18c,2023,M46.20-M46.59,(none),(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CN18o,2023,M46.20-M46.59,core 212 codes,(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CA41cD,2023,M46.20-M46.59,(none),07 Tod,Nebendiagnose=A41.- sepsis,Info
+CA41oD,2023,M46.20-M46.59,core 212 codes,07 Tod,Nebendiagnose=A41.- sepsis,Info
+D06+08c,2023,M46.20-M46.59,(none),06+08 Verlegung,(none),Info
+D06+08o,2023,M46.20-M46.59,core 212 codes,06+08 Verlegung,(none),Info
+D09c,2023,M46.20-M46.59,(none),09 Rehabilitation,(none),Info
+D09o,2023,M46.20-M46.59,core 212 codes,09 Rehabilitation,(none),Info
+D10c,2023,M46.20-M46.59,(none),10 Pflegeeinrichtung,(none),Info
+D10o,2023,M46.20-M46.59,core 212 codes,10 Pflegeeinrichtung,(none),Info
+D11c,2023,M46.20-M46.59,(none),11 Hospiz,(none),Info
+D11o,2023,M46.20-M46.59,core 212 codes,11 Hospiz,(none),Info
+N1,2024,M46.20-M46.59,(none),(none),(none),Nebendiagnosen
+N2,2024,M46.20-M46.59,core 214 codes,(none),(none),Nebendiagnosen
+N3,2024,M46.20-M46.59,(none),07 Tod,(none),Nebendiagnosen
+N4,2024,M46.20-M46.59,core 214 codes,07 Tod,(none),Nebendiagnosen
+CA41c,2024,M46.20-M46.59,(none),(none),Nebendiagnose=A41.- sepsis,Info
+CA41o,2024,M46.20-M46.59,core 214 codes,(none),Nebendiagnose=A41.- sepsis,Info
+CG82c,2024,M46.20-M46.59,(none),(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CG82o,2024,M46.20-M46.59,core 214 codes,(none),Nebendiagnose=G82.- paraparesis/paraplegia,Info
+CE11c,2024,M46.20-M46.59,(none),(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CE11o,2024,M46.20-M46.59,core 214 codes,(none),Nebendiagnose=E11.- type 2 diabetes,Info
+CI50c,2024,M46.20-M46.59,(none),(none),Nebendiagnose=I50.- heart failure,Info
+CI50o,2024,M46.20-M46.59,core 214 codes,(none),Nebendiagnose=I50.- heart failure,Info
+CN18c,2024,M46.20-M46.59,(none),(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CN18o,2024,M46.20-M46.59,core 214 codes,(none),Nebendiagnose=N18.- chronic kidney disease,Info
+CA41cD,2024,M46.20-M46.59,(none),07 Tod,Nebendiagnose=A41.- sepsis,Info
+CA41oD,2024,M46.20-M46.59,core 214 codes,07 Tod,Nebendiagnose=A41.- sepsis,Info
+D06+08c,2024,M46.20-M46.59,(none),06+08 Verlegung,(none),Info
+D06+08o,2024,M46.20-M46.59,core 214 codes,06+08 Verlegung,(none),Info
+D09c,2024,M46.20-M46.59,(none),09 Rehabilitation,(none),Info
+D09o,2024,M46.20-M46.59,core 214 codes,09 Rehabilitation,(none),Info
+D10c,2024,M46.20-M46.59,(none),10 Pflegeeinrichtung,(none),Info
+D10o,2024,M46.20-M46.59,core 214 codes,10 Pflegeeinrichtung,(none),Info
+D11c,2024,M46.20-M46.59,(none),11 Hospiz,(none),Info
+D11o,2024,M46.20-M46.59,core 214 codes,11 Hospiz,(none),Info
+B1,2019,M46.20-M46.59,debridement-directed 87 codes,(none),(none),Info
+B2,2019,M46.20-M46.59,debridement-directed 87 codes,07 Tod,(none),Info
+B1,2020,M46.20-M46.59,debridement-directed 87 codes,(none),(none),Info
+B2,2020,M46.20-M46.59,debridement-directed 87 codes,07 Tod,(none),Info
+B1,2021,M46.20-M46.59,debridement-directed 92 codes,(none),(none),Info
+B2,2021,M46.20-M46.59,debridement-directed 92 codes,07 Tod,(none),Info
+B1,2022,M46.20-M46.59,debridement-directed 91 codes,(none),(none),Info
+B2,2022,M46.20-M46.59,debridement-directed 91 codes,07 Tod,(none),Info
+B1,2023,M46.20-M46.59,debridement-directed 90 codes,(none),(none),Info
+B2,2023,M46.20-M46.59,debridement-directed 90 codes,07 Tod,(none),Info
+B1,2024,M46.20-M46.59,debridement-directed 90 codes,(none),(none),Info
+B2,2024,M46.20-M46.59,debridement-directed 90 codes,07 Tod,(none),Info

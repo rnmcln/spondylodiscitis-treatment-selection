@@ -1,0 +1,10 @@
+condition,source,N_operative,pct_operative,N_nonoperative,pct_nonoperative,prevalence_ratio,lo,hi
+Intraspinal / epidural abscess (G06.1),register (single code),5906,22.6,2034,5.81,3.89,3.708,4.08
+Septic shock (R57.2),register (single code),834,3.19,399,1.14,2.8,2.488,3.151
+Sepsis (A41.-),filter query (code group),2585,9.89,1917,5.48,1.806,1.707,1.912
+Paraparesis / paraplegia (G82.-),filter query (code group),1708,6.54,1347,3.85,1.699,1.584,1.821
+Type 2 diabetes (E11.-),filter query (code group),7531,28.82,10129,28.94,0.996,0.971,1.021
+Heart failure (I50.-),filter query (code group),4565,17.47,7804,22.29,0.784,0.758,0.81
+Chronic kidney disease (N18.-),filter query (code group),4545,17.39,8457,24.16,0.72,0.697,0.744
+Coded secondary diagnosis entries per episode (mean),register (all codes),485144,18.57,524487,14.98,,,
+"Distinct secondary diagnosis codes per episode (mean, lower bound)",register (all codes),464068,17.76,510418,14.58,,,

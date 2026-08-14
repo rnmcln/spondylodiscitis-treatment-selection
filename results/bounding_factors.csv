@@ -1,0 +1,4 @@
+condition,rr_exposure_confounder,rr_confounder_outcome,bounding_factor
+intraspinal abscess (G06.1),3.89,1.391,1.264
+septic shock (R57.2),2.8,10.742,2.398
+sepsis (A41.-),1.806,6.6,1.61

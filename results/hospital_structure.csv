@@ -1,0 +1,8 @@
+dimension,category,N_total,N_operative,operative_share_pct,deaths_total,deaths_operative,mort_operative_pct,mort_nonoperative_pct
+beds,1000+,11239,7328,65.2,894,561,7.66,8.51
+beds,300-599,21852,8765,40.1,1479,623,7.11,6.54
+beds,600-999,11600,5528,47.7,946,436,7.89,8.4
+beds,<300,15877,4436,27.9,719,189,4.26,4.63
+owner,Freigemeinnuetzig,19527,6824,34.9,1177,437,6.4,5.83
+owner,Oeffentlich,29983,14493,48.3,2241,1119,7.72,7.24
+owner,Privat,11058,4740,42.9,620,253,5.34,5.81

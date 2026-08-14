@@ -1,0 +1,8 @@
+scenario,rr
+0% in both arms,1.1154
+2% in both arms,1.0878
+5% in both arms,1.0532
+10% in both arms,1.0087
+20% in both arms,0.9492
+equal rate that nulls the association,11.2
+"non-operative arm only, rate that nulls the association",2.9

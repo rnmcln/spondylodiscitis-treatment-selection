@@ -1,0 +1,6 @@
+adjustment,rr,lo,hi,note
+none (crude),1.1175,1.0526,1.1863,Katz logarithmic interval
+data year,1.1154,1.0507,1.1841,six strata
+data year and age band,1.3131,1.2369,1.3939,"primary analysis, 54 strata"
+data year and intraspinal abscess (G06.1),1.053,0.9896,1.1205,12 strata (condition x year)
+data year and sepsis (A41.-),0.9287,0.8762,0.9844,12 strata (condition x year)

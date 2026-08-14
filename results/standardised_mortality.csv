@@ -1,0 +1,7 @@
+quantity,estimate,lo,hi
+"directly standardised mortality, operative, %",7.73,7.39,8.06
+"directly standardised mortality, non-operative, %",5.89,5.65,6.12
+"standardised difference, percentage points",1.84,1.43,2.25
+"between-year heterogeneity of the age-adjusted RR, Cochran Q",8.87,,
+"between-year heterogeneity, I2, %",44.0,,
+"between-year heterogeneity, P value",0.114,,

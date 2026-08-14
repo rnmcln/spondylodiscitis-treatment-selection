@@ -1,0 +1,5 @@
+definition,comparator,N_exposed,deaths_exposed,mortality_pct,N_comparator,deaths_comparator,rr,lo,hi
+core (primary),complement,26130,1841,7.05,35004,2207,1.1175,1.0526,1.1863
+wide (core + lumbar access),complement,26330,1846,7.01,34804,2202,1.1081,1.0439,1.1764
+instrumented only,core non-operative,22938,1590,6.93,35004,2207,1.0994,1.033,1.1701
+debridement-directed (excludes 5-839 and 5-83b),core non-operative,21878,1525,6.97,35004,2207,1.1055,1.038,1.1775

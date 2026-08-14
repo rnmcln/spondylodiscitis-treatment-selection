@@ -1,0 +1,19 @@
+ops_family,label_as_printed_in_ops_catalogue,role,rationale
+5-033,Inzision des Spinalkanals,core,Decompression of the spinal canal
+5-830,Inzision von erkranktem Knochen- und Gelenkgewebe der Wirbelsäule,core,Septic debridement
+5-831,Exzision von erkranktem Bandscheibengewebe,core,Disc debridement
+5-832,Exzision von (erkranktem) Knochen- und Gelenkgewebe der Wirbelsäule,core,Bone debridement
+5-835,Knochenersatz an der Wirbelsäule,core and instrumented,Reconstruction
+5-836,Spondylodese,core and instrumented,Stabilisation
+5-837,Wirbelkörperersatz,core and instrumented,Corpectomy reconstruction
+5-839,Andere Operationen an der Wirbelsäule,core,Residual operative class
+5-83b,Osteosynthese (dynamische Stabilisierung) an der Wirbelsäule,core and instrumented,Stabilisation without fusion
+5-032,"Zugang zur Lendenwirbelsäule, zum Os sacrum und zum Os coccygis",wide sensitivity only,"Access code, co-occurring"
+5-780,"Inzision am Knochen, septisch und aseptisch",wide sensitivity only,No spinal localisation value at four-digit level
+5-833,—,excluded,Does not exist in the OPS catalogues 2019-2024
+5-83a,Minimalinvasive Behandlungsverfahren an der Wirbelsäule,excluded,"Pain therapy, not septic surgery"
+5-838,Komplexe Rekonstruktionen (Kinder und Jugendliche),excluded,"Paediatric, negligible volume"
+5-984,Mikrochirurgische Technik,excluded,Technique modifier
+1-502,Biopsie an Muskeln und Weichteilen durch Inzision,excluded,"Diagnostic, occurs in both arms"
+5-983,Reoperation,marker only,Marker of reintervention
+8-800,Transfusion von Vollblut und Blutbestandteilen,marker only,Resource-use marker

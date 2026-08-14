@@ -1,0 +1,5 @@
+destination,N_operative,pct_operative,N_nonoperative,pct_nonoperative,N_cohort,pct_cohort,ratio
+Transfer to another acute hospital,4841,18.53,8773,25.06,13614,22.27,0.739
+Discharge to rehabilitation,2147,8.22,1444,4.13,3591,5.87,1.992
+Discharge to a nursing facility,819,3.13,1704,4.87,2523,4.13,0.644
+Discharge to a hospice,,,,,69,0.11,

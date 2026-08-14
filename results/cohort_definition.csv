@@ -1,0 +1,7 @@
+cohort,N_total,N_operative,operative_share_pct,deaths_total,mortality_pct,mort_operative_pct,mort_nonoperative_pct,rr,lo,hi
+principal diagnosis (primary cohort),61134,26130,42.7,4048,6.62,7.05,6.3,1.1175,1.0526,1.1863
+secondary diagnosis (overlap included),60244,24569,40.8,6750,11.2,10.03,12.01,0.8353,0.7971,0.8753
+secondary diagnosis only (overlap removed),39239,10944,27.9,4938,12.58,12.04,12.79,0.9413,0.8873,0.9986
+overlap (both principal and secondary),21005,13625,64.9,1812,8.63,8.42,9.01,0.9342,0.8528,1.0235
+any diagnosis (union),100373,37074,36.9,8986,8.95,8.52,9.21,0.9256,0.8881,0.9647
+"secondary diagnosis (overlap included), age-adjusted",60244,24569,40.8,6750,11.2,10.03,12.01,0.925,0.8832,0.9688
