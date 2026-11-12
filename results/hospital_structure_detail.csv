@@ -1,0 +1,8 @@
+dimension,category,admissions,operative,operative_share_pct,share_range,deaths,deaths_operative,op_mort_pct,nonop_mort_pct,stratum_rr
+beds,<300,15881,4476,28.2,27.9-28.4,725,206,4.6,4.55,1.01
+beds,300-599,21852,8765,40.1,40.1-40.1,1479,624,7.12,6.53,1.09
+beds,600-999,11813,5528,46.8,46.2-47.4,946,437,7.91,8.11,0.97
+beds,1000+,11502,7328,63.7,63.3-64.1,894,562,7.67,7.96,0.96
+owner,Oeffentlich,29983,14513,48.4,48.3-48.5,2243,1124,7.74,7.23,1.07
+owner,Freigemeinnuetzig,19619,6839,34.9,34.6-35.2,1179,444,6.5,5.75,1.13
+owner,Privat,11445,4752,41.5,41.0-42.2,623,261,5.49,5.41,1.01

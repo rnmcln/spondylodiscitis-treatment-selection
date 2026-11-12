@@ -1,0 +1,112 @@
+year,query,bed_class,ownership,status,rest_rows,rest_total
+2019,Q4,100 bis 149 Betten,Freigemeinnuetzig,optional,6,7
+2019,Q4,1000 Betten und mehr,Privat,optional,6,7
+2019,Q4,150 bis 199 Betten,Freigemeinnuetzig,optional,6,7
+2019,Q4,200 bis 249 Betten,Freigemeinnuetzig,optional,6,7
+2019,Q4,200 bis 249 Betten,Privat,optional,6,7
+2019,Q4,250 bis 299 Betten,Oeffentlich,optional,6,7
+2019,Q4,50 bis 99 Betten,Freigemeinnuetzig,optional,6,7
+2019,Q4,50 bis 99 Betten,Oeffentlich,optional,6,7
+2019,Q4,50 bis 99 Betten,Privat,optional,6,7
+2019,Q4,500 bis 599 Betten,Privat,optional,6,7
+2019,Q4,bis 49 Betten,Freigemeinnuetzig,optional,6,7
+2019,Q4,bis 49 Betten,Oeffentlich,optional,6,7
+2019,Q4,bis 49 Betten,Privat,optional,6,7
+2020,Q1,1000 Betten und mehr,Freigemeinnuetzig,mandatory hidden,4,404
+2020,Q1,1000 Betten und mehr,Privat,mandatory hidden,4,404
+2020,Q1,800 bis 999 Betten,Privat,mandatory hidden,4,404
+2020,Q2,50 bis 99 Betten,Oeffentlich,optional,2,19
+2020,Q2,bis 49 Betten,Freigemeinnuetzig,optional,2,19
+2020,Q2,bis 49 Betten,Oeffentlich,optional,2,19
+2020,Q4,100 bis 149 Betten,Freigemeinnuetzig,optional,4,4
+2020,Q4,100 bis 149 Betten,Oeffentlich,optional,4,4
+2020,Q4,100 bis 149 Betten,Privat,optional,4,4
+2020,Q4,1000 Betten und mehr,Freigemeinnuetzig,optional,4,4
+2020,Q4,150 bis 199 Betten,Freigemeinnuetzig,optional,4,4
+2020,Q4,200 bis 249 Betten,Privat,optional,4,4
+2020,Q4,250 bis 299 Betten,Oeffentlich,optional,4,4
+2020,Q4,400 bis 499 Betten,Privat,optional,4,4
+2020,Q4,50 bis 99 Betten,Freigemeinnuetzig,optional,4,4
+2020,Q4,50 bis 99 Betten,Oeffentlich,optional,4,4
+2020,Q4,50 bis 99 Betten,Privat,optional,4,4
+2020,Q4,bis 49 Betten,Freigemeinnuetzig,optional,4,4
+2020,Q4,bis 49 Betten,Oeffentlich,optional,4,4
+2020,Q4,bis 49 Betten,Privat,optional,4,4
+2021,Q2,50 bis 99 Betten,Freigemeinnuetzig,optional,2,4
+2021,Q2,50 bis 99 Betten,Oeffentlich,optional,2,4
+2021,Q2,bis 49 Betten,Freigemeinnuetzig,optional,2,4
+2021,Q2,bis 49 Betten,Oeffentlich,optional,2,4
+2021,Q3,50 bis 99 Betten,Oeffentlich,optional,4,5
+2021,Q3,50 bis 99 Betten,Privat,optional,4,5
+2021,Q3,800 bis 999 Betten,Privat,optional,4,5
+2021,Q3,bis 49 Betten,Freigemeinnuetzig,optional,4,5
+2021,Q3,bis 49 Betten,Oeffentlich,optional,4,5
+2021,Q3,bis 49 Betten,Privat,optional,4,5
+2021,Q4,100 bis 149 Betten,Freigemeinnuetzig,optional,6,7
+2021,Q4,100 bis 149 Betten,Oeffentlich,optional,6,7
+2021,Q4,100 bis 149 Betten,Privat,optional,6,7
+2021,Q4,150 bis 199 Betten,Freigemeinnuetzig,optional,6,7
+2021,Q4,150 bis 199 Betten,Oeffentlich,optional,6,7
+2021,Q4,150 bis 199 Betten,Privat,optional,6,7
+2021,Q4,50 bis 99 Betten,Freigemeinnuetzig,optional,6,7
+2021,Q4,50 bis 99 Betten,Oeffentlich,optional,6,7
+2021,Q4,50 bis 99 Betten,Privat,optional,6,7
+2021,Q4,800 bis 999 Betten,Freigemeinnuetzig,optional,6,7
+2021,Q4,800 bis 999 Betten,Privat,optional,6,7
+2021,Q4,bis 49 Betten,Freigemeinnuetzig,optional,6,7
+2021,Q4,bis 49 Betten,Oeffentlich,optional,6,7
+2021,Q4,bis 49 Betten,Privat,optional,6,7
+2022,Q1,bis 49 Betten,Freigemeinnuetzig,optional,2,10
+2022,Q2,50 bis 99 Betten,Freigemeinnuetzig,optional,2,5
+2022,Q2,bis 49 Betten,Freigemeinnuetzig,optional,2,5
+2022,Q2,bis 49 Betten,Oeffentlich,optional,2,5
+2022,Q4,100 bis 149 Betten,Freigemeinnuetzig,optional,3,5
+2022,Q4,100 bis 149 Betten,Oeffentlich,optional,3,5
+2022,Q4,100 bis 149 Betten,Privat,optional,3,5
+2022,Q4,150 bis 199 Betten,Privat,optional,3,5
+2022,Q4,50 bis 99 Betten,Freigemeinnuetzig,optional,3,5
+2022,Q4,50 bis 99 Betten,Oeffentlich,optional,3,5
+2022,Q4,50 bis 99 Betten,Privat,optional,3,5
+2022,Q4,800 bis 999 Betten,Privat,optional,3,5
+2022,Q4,bis 49 Betten,Freigemeinnuetzig,optional,3,5
+2022,Q4,bis 49 Betten,Oeffentlich,optional,3,5
+2022,Q4,bis 49 Betten,Privat,optional,3,5
+2023,Q2,50 bis 99 Betten,Freigemeinnuetzig,optional,3,36
+2023,Q2,50 bis 99 Betten,Oeffentlich,optional,3,36
+2023,Q2,800 bis 999 Betten,Privat,optional,3,36
+2023,Q2,bis 49 Betten,Freigemeinnuetzig,optional,3,36
+2023,Q2,bis 49 Betten,Oeffentlich,optional,3,36
+2023,Q2,bis 49 Betten,Privat,optional,3,36
+2023,Q3,50 bis 99 Betten,Freigemeinnuetzig,optional,2,2
+2023,Q3,bis 49 Betten,Freigemeinnuetzig,optional,2,2
+2023,Q3,bis 49 Betten,Oeffentlich,optional,2,2
+2023,Q3,bis 49 Betten,Privat,optional,2,2
+2023,Q4,100 bis 149 Betten,Freigemeinnuetzig,optional,4,7
+2023,Q4,150 bis 199 Betten,Freigemeinnuetzig,optional,4,7
+2023,Q4,150 bis 199 Betten,Privat,optional,4,7
+2023,Q4,250 bis 299 Betten,Oeffentlich,optional,4,7
+2023,Q4,50 bis 99 Betten,Freigemeinnuetzig,optional,4,7
+2023,Q4,50 bis 99 Betten,Oeffentlich,optional,4,7
+2023,Q4,50 bis 99 Betten,Privat,optional,4,7
+2023,Q4,800 bis 999 Betten,Privat,optional,4,7
+2023,Q4,bis 49 Betten,Freigemeinnuetzig,optional,4,7
+2023,Q4,bis 49 Betten,Oeffentlich,optional,4,7
+2023,Q4,bis 49 Betten,Privat,optional,4,7
+2024,Q1,800 bis 999 Betten,Privat,mandatory hidden,2,149
+2024,Q2,bis 49 Betten,Freigemeinnuetzig,optional,4,9
+2024,Q2,bis 49 Betten,Oeffentlich,optional,4,9
+2024,Q2,bis 49 Betten,Privat,optional,4,9
+2024,Q3,50 bis 99 Betten,Freigemeinnuetzig,optional,2,3
+2024,Q3,bis 49 Betten,Freigemeinnuetzig,optional,2,3
+2024,Q3,bis 49 Betten,Oeffentlich,optional,2,3
+2024,Q3,bis 49 Betten,Privat,optional,2,3
+2024,Q4,100 bis 149 Betten,Freigemeinnuetzig,optional,2,2
+2024,Q4,100 bis 149 Betten,Oeffentlich,optional,2,2
+2024,Q4,150 bis 199 Betten,Freigemeinnuetzig,optional,2,2
+2024,Q4,250 bis 299 Betten,Oeffentlich,optional,2,2
+2024,Q4,50 bis 99 Betten,Freigemeinnuetzig,optional,2,2
+2024,Q4,50 bis 99 Betten,Oeffentlich,optional,2,2
+2024,Q4,50 bis 99 Betten,Privat,optional,2,2
+2024,Q4,bis 49 Betten,Freigemeinnuetzig,optional,2,2
+2024,Q4,bis 49 Betten,Oeffentlich,optional,2,2
+2024,Q4,bis 49 Betten,Privat,optional,2,2

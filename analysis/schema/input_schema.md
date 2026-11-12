@@ -63,6 +63,18 @@ The bed-size class × ownership cross-tabulation, one row per cell per query per
 For each year and query the `faelle` column must sum exactly to the corresponding total in
 `arm_totals.csv`.
 
+## `data/hospital_hidden_rows.csv`
+
+One row per data year and query whose hospital distribution contains a residual row. Read by
+`05b_hospital_reconstruction.py`.
+
+| Column | Content |
+|---|---|
+| `year` | data year |
+| `query` | `Q1`, `Q2`, `Q3` or `Q4` |
+| `hidden_rows` | number of rows combined into the residual row, as reported by the interface |
+| `hidden_admissions` | episode count of the residual row; must equal its `faelle` in `hospital_tables.csv` |
+
 ## `data/procedure_family_counts.csv`
 
 One row per data year and operative OPS family (54 rows).

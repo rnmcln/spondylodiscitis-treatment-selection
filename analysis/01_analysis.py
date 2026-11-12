@@ -219,7 +219,7 @@ def add(label, op, nonop):
     print(f'{label:<28} operative {op:>8}   non-operative {nonop:>8}')
     t1.append({'characteristic': label, 'operative': op, 'non_operative': nonop})
 
-add('Episodes, n', Ns, Nc)
+add('Admissions, n', Ns, Nc)
 add('Male, %', round(100*wsum('operative', 'male_pct')/Ns, 1),
     round(100*(wsum('cohort', 'male_pct') - wsum('operative', 'male_pct'))/Nc, 1))
 # Three age groups; the full nine-band distribution is in age_specific.csv and Figure 1.
@@ -238,7 +238,7 @@ add('Mean length of stay, days', round(loss/Ns, 1), round((losc-loss)/Nc, 1))
 if panel_in is not None:
     o_ = sum(int(panel_in[(y, 'Q2')]['G06.1']) for y in years)
     a_ = sum(int(panel_in[(y, 'Q1')]['G06.1']) for y in years)
-    add('Intraspinal abscess, %', round(100*o_/Ns, 1), round(100*(a_-o_)/Nc, 1))
+    add('Intraspinal empyema, %', round(100*o_/Ns, 1), round(100*(a_-o_)/Nc, 1))
 if exact_in is not None:
     for code, lab in (('G82', 'Paraparesis or paraplegia, %'), ('A41', 'Sepsis, %')):
         o_ = sum(exact_in[(y, 'operative', code, 'all')] for y in years)
@@ -670,7 +670,7 @@ if panel_in is not None and exact_in is not None:
 
     # (a) single ICD codes read directly from the register; these are exact
     #     because the code has no subcodes, subject to the suppression floor of 5.
-    single = [('G06.1', 'Intraspinal / epidural abscess (G06.1)'),
+    single = [('G06.1', 'Intraspinal / epidural empyema (G06.1)'),
               ('R57.2', 'Septic shock (R57.2)')]
     comorb_rows = []
     reg = {}
@@ -795,7 +795,7 @@ if panel_in is not None and exact_in is not None:
                 ex[(y, 'operative', 'A41', 'death')],
                 ex[(y, 'cohort', 'A41', 'death')] - ex[(y, 'operative', 'A41', 'death')])
 
-    two_level(absc, 'data year and intraspinal abscess (G06.1)')
+    two_level(absc, 'data year and intraspinal empyema (G06.1)')
     two_level(seps, 'data year and sepsis (A41.-)')
     write('adjustment_sets.csv', adj_rows)
 
@@ -803,7 +803,7 @@ if panel_in is not None and exact_in is not None:
     print('\n=== Bounding factors of the measured indications (VanderWeele-Ding) ===')
     bf_rows = []
     for label, (n1, n0, d1, d0) in (
-            ('intraspinal abscess (G06.1)', reg['G06.1']),
+            ('intraspinal empyema (G06.1)', reg['G06.1']),
             ('septic shock (R57.2)', reg['R57.2']),
             ('sepsis (A41.-)', (sum(ex[(y, 'operative', 'A41', 'all')] for y in years),
                                 sum(ex[(y, 'cohort', 'A41', 'all')]

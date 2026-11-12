@@ -126,12 +126,15 @@ check on the first attempt and were rebuilt.
 
 ## Suppression
 
-Cells with fewer than four episodes are suppressed by the interface and pooled into a
-residual ("Rest") row. The secondary-diagnosis register lists codes down to five episodes, and
-a query whose result is smaller than the display threshold returns no table at all rather than
-a suppressed cell. Across the study period the suppressed residuals amounted to 566
-episodes in Q1, 73 in Q2, 10 in Q3 and 32 in Q4. They are excluded from the hospital-structure
-analysis and reported rather than imputed.
+The hospital distribution combines some cells into a residual ("Rest") row and reports the
+number of hidden rows and their total; both were transcribed. Hiding differs between the four
+queries of a year and is not restricted to small counts (in 2020 the cohort query hid 404
+episodes, including three large-hospital cells displayed in the other queries). Across the
+study period the residual rows held 566 episodes in Q1, 73 in Q2, 10 in Q3 and 32 in Q4. The
+hidden cells are reconstructed in `../analysis/05b_hospital_reconstruction.py` under the
+containment constraints between the four queries; see the README. The secondary-diagnosis
+register lists codes down to five episodes, and a query whose result is smaller than the
+display threshold returns no table at all rather than a suppressed cell.
 
 ## Reproducing the input files
 

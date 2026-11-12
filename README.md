@@ -14,8 +14,8 @@ selection mean for the observed difference in in-hospital mortality between them
 to the §21 KHEntgG dataset, the mandatory annual submission of case-level billing records by
 German hospitals reimbursed under the aG-DRG system. It returns aggregate counts and
 distributions, not case-level records. The unit of observation is the acute inpatient
-discharge episode; episodes cannot be linked to patients, and cells with fewer than four
-episodes are suppressed.
+discharge episode; episodes cannot be linked to patients. Small results are suppressed, and
+the hospital tables combine some cells, not only small ones, into a residual row.
 
 **Design.** Because the interface returns aggregates, every quantity is the difference of two
 queries. Four queries per data year define the 2 × 2 table (cohort, cohort with an operative
@@ -43,16 +43,18 @@ episode": it carries no treatment intention and no procedure timing.
 | Discharge episodes, 2019–2024 | 61,134 |
 | Episodes with an operative code | 26,130 (42.7%) |
 | Operative share, age 50–54 → ≥80 years | 52.6% → 33.2% |
-| Operative share, <300 beds → ≥1000 beds | 27.9% → 65.2% |
+| Operative share, <300 beds → ≥1000 beds | 28.2% → 63.7% |
 | PCCL 4–6, operative vs non-operative | 49.3% vs 13.7% |
 | Intensive care, operative vs non-operative | 50.5% vs 10.9% |
 | In-hospital mortality, operative vs non-operative | 7.05% vs 6.30% |
 | Crude risk ratio | 1.12 (95% CI 1.05–1.19) |
 | Age-adjusted risk ratio (Mantel-Haenszel) | 1.31 (95% CI 1.24–1.39) |
-| Intraspinal abscess (G06.1), operative vs non-operative | 22.6% vs 5.8% |
+| Intraspinal empyema (G06.1), operative vs non-operative | 22.6% vs 5.8% |
 | Sepsis (A41), operative vs non-operative | 9.9% vs 5.5% |
-| Risk ratio stratified by year and abscess | 1.05 (0.99–1.12) |
+| Risk ratio stratified by year and empyema | 1.05 (0.99–1.12) |
 | Risk ratio stratified by year and sepsis | 0.93 (0.88–0.98) |
+| Risk ratio stratified by year and hospital bed-size category | 1.02 (0.96–1.08) |
+| Risk ratio stratified by year and hospital ownership | 1.08 (1.01–1.14) |
 | Transfer to another hospital, operative vs non-operative | 18.5% vs 25.1% |
 | Directly age-standardised mortality difference | 1.84 percentage points (1.43–2.25) |
 | Secondary-diagnosis-only cohort (39,239 episodes) | 0.94 (0.89–1.00) |
@@ -66,7 +68,7 @@ do not point the same way.
 
 - *Age.* Operated patients are younger, and younger age predicts lower mortality, so adjusting
   for age moves the association further from the null rather than towards it.
-- *Acute coded conditions.* Intraspinal abscess, sepsis, septic shock and paraparesis are all
+- *Acute coded conditions.* Intraspinal empyema, sepsis, septic shock and paraparesis are all
   enriched in the operative arm. Stratifying by any of them moves the association in the
   opposite direction to age adjustment.
 - *Chronic comorbidity.* Heart failure and chronic kidney disease run the other way, being
@@ -99,10 +101,16 @@ analysis/
   02_figures.py             figures 1-3 and supplementary figures S1-S2
   03_tables.py              manuscript tables
   04_verify.py              consistency checks on inputs and results
+  05b_hospital_reconstruction.py
+                            reconstruction of the hidden cells of the hospital tables
+  06_reported_quantities.py hospital-stratified risk ratios, article tables, figure data
+                            and the numbers quoted in the article text
+  07_article_figures.py     article figures 1-2 and eFigure 1
   schema/input_schema.md    column specification of the input files
 results/                    derived summary results and tables, including per-OPS-family
                             counts and the cohort-definition sensitivity
-figures/                    figures 1-3 and S1-S2 as vector PDF and 300 dpi PNG
+figures/                    article_* files: the figures of the article (07);
+                            figure1-3 and S1-S2: figures of version 1.0.0 (02)
 data/                       input files (not distributed; see below)
 ```
 
@@ -121,10 +129,13 @@ python3 analysis/01_analysis.py    # writes results/
 python3 analysis/02_figures.py     # writes figures/
 python3 analysis/03_tables.py      # writes the tables
 python3 analysis/04_verify.py      # 175 consistency checks; non-zero exit on failure
+python3 analysis/05b_hospital_reconstruction.py   # hidden hospital cells (fixed seed)
+python3 analysis/06_reported_quantities.py        # article tables and key numbers
+python3 analysis/07_article_figures.py            # article figures
 ```
 
-Python 3.11. `01_analysis.py`, `03_tables.py` and `04_verify.py` use the standard library
-only; `02_figures.py` requires matplotlib (see `requirements.txt`).
+Python 3.10 or later. The analysis scripts use the standard library only; `02_figures.py`
+and `07_article_figures.py` require matplotlib (see `requirements.txt`).
 
 ## Methods notes
 
@@ -138,11 +149,22 @@ only; `02_figures.py` requires matplotlib (see `requirements.txt`).
   which the data cannot identify.
 - **PCCL** is derived by the annual aG-DRG grouper and is not comparable across data years; it
   is used descriptively and not for adjustment.
-- **Suppression.** Suppressed residual cells (566 episodes in Q1, 73 in Q2, 10 in Q3, 32 in
-  Q4) are excluded from the hospital-structure analysis and reported rather than imputed. The
-  secondary-diagnosis register lists codes down to five episodes; a query returning too few
-  cases is not displayed at all, which is why the hospice discharge counts are reported for
-  the whole cohort only.
+- **Hidden hospital cells.** The hospital tables (bed-size class × ownership, 36 cells per
+  year) combine some cells into a residual row, for which the interface reports the number of
+  hidden rows and their total. Hiding differs between the four queries of a year and is not
+  restricted to small counts: in 2020 the cohort query hid 404 episodes in four rows, including
+  three large-hospital cells that are displayed in the operative and death queries. Summing the
+  displayed cells therefore gives numerators and denominators that do not match.
+  `05b_hospital_reconstruction.py` reconstructs the hidden cells for each year under the
+  containment constraints between the four queries (operative ≤ cohort, deaths ≤ cohort,
+  operative deaths ≤ operative and ≤ deaths, nonoperative deaths ≤ nonoperative episodes).
+  Reported values are medians over 2000 feasible reconstructions; ranges are the minimum and
+  maximum over these and over 2000 extreme reconstructions (seed 20261112). Episodes in rows
+  outside the 36-cell grid (median 86) cannot be assigned to a hospital category and are
+  excluded from the hospital analyses.
+- **Suppression elsewhere.** The secondary-diagnosis register lists codes down to five
+  episodes; a query returning too few cases is not displayed at all, which is why the hospice
+  discharge counts are reported for the whole cohort only.
 - **Coded conditions are not baseline covariates.** Secondary diagnoses describe the whole
   admission, so a condition may precede an operation, prompt it or follow it. Stratified
   estimates using them are alternatives to age adjustment, not refinements of it, and they
@@ -156,6 +178,21 @@ only; `02_figures.py` requires matplotlib (see `requirements.txt`).
   against filter queries the register sums were 1.5% (N18), 2.3% (E11), 4.6% (A41), 32.2%
   (I50) and 68.1% (G82) too high. Rubric counts therefore come from filter queries, and only
   codes without subcodes are read from the register.
+
+## Version history
+
+- **1.1.0.** Adds the cell-level reconstruction of the hidden hospital cells
+  (`05b_hospital_reconstruction.py`), the hospital-stratified risk ratios, article tables, figure
+  data and key numbers (`06_reported_quantities.py`) and the article figures
+  (`07_article_figures.py`). The hospital results of version 1.0.0 were computed from the
+  displayed cells, whose numerators and denominators do not match where a cell is hidden in one
+  query but not in another. With the reconstruction the operative share in hospitals with
+  ≥1000 beds is 63.7% (range 63.3–64.1%) instead of 65.2%, and in hospitals with <300 beds 28.2%
+  instead of 27.9%. `results/hospital_structure.csv` and supplementary figure S1, written by
+  `01_analysis.py` and `02_figures.py`, still pool the displayed cells and are retained for
+  comparison with version 1.0.0 only. G06.1 is labelled intraspinal empyema instead of
+  intraspinal abscess; table and figure labels were harmonised. No other result changed.
+- **1.0.0.** Query protocol, analysis code and derived results.
 
 ## Licence
 

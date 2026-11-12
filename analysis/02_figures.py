@@ -25,8 +25,11 @@ plt.rcParams.update({
 GREY = '#4d4d4d'
 ACCENT = '#8c6bb1'
 rd = lambda n: list(csv.DictReader(open(os.path.join(RES, n))))
-save = lambda fig, stem: (fig.savefig(os.path.join(FIG, stem + '.pdf')),
-                          fig.savefig(os.path.join(FIG, stem + '.png'), dpi=300),
+save = lambda fig, stem: (fig.savefig(os.path.join(FIG, stem + '.pdf'),
+                                       metadata={'CreationDate': None},
+                                       bbox_inches='tight', pad_inches=0.02),
+                          fig.savefig(os.path.join(FIG, stem + '.png'), dpi=300,
+                                      bbox_inches='tight', pad_inches=0.02),
                           plt.close(fig))
 
 
@@ -111,7 +114,7 @@ ax.xaxis.set_major_formatter(FixedFormatter(['0.8', '1.0', '1.25', '1.6']))
 ax.xaxis.set_minor_locator(NullLocator())
 ax.xaxis.set_minor_formatter(NullFormatter())
 ax.set_xlim(0.75, 1.8)
-ax.set_xlabel('Risk ratio, operative vs non-operative (log scale)')
+ax.set_xlabel('Risk ratio, operative vs nonoperative')
 ax.text(0.02, 0.12, 'age-adjusted', color=ACCENT, transform=ax.transAxes, fontsize=8)
 ax.text(0.02, 0.04, 'crude', color=GREY, transform=ax.transAxes, fontsize=8)
 fig.tight_layout()
@@ -119,7 +122,7 @@ save(fig, 'figure2_risk_ratios_by_year')
 # --------- Figure 3: clinical selection profile (prevalence ratios by arm) ----
 ind_path = os.path.join(RES, 'indication_comorbidity.csv')
 adj_path = os.path.join(RES, 'adjustment_sets.csv')
-SHORT = {'Intraspinal / epidural abscess (G06.1)': 'Intraspinal abscess',
+SHORT = {'Intraspinal / epidural empyema (G06.1)': 'Intraspinal empyema',
          'Septic shock (R57.2)': 'Septic shock',
          'Sepsis (A41.-)': 'Sepsis',
          'Paraparesis / paraplegia (G82.-)': 'Paraparesis or paraplegia',
@@ -144,20 +147,20 @@ if os.path.exists(ind_path):
     ax.xaxis.set_minor_locator(NullLocator())
     ax.xaxis.set_minor_formatter(NullFormatter())
     ax.set_xlim(0.62, 4.6)
-    ax.set_xlabel('Prevalence ratio, operative vs non-operative (log scale)')
+    ax.set_xlabel('Prevalence ratio, operative vs nonoperative')
     fig.tight_layout()
     save(fig, 'figure3_clinical_selection_profile')
 
 # ---- Supplementary Figure S2: risk ratio under alternative stratification ----
 if os.path.exists(adj_path):
     ORDER = ['none (crude)', 'data year', 'data year and age band',
-             'data year and intraspinal abscess (G06.1)', 'data year and sepsis (A41.-)']
-    NAME = {'none (crude)': 'None', 'data year': 'Year',
-            'data year and age band': 'Year + age',
-            'data year and intraspinal abscess (G06.1)': 'Year + abscess',
-            'data year and sepsis (A41.-)': 'Year + sepsis'}
+             'data year and intraspinal empyema (G06.1)', 'data year and sepsis (A41.-)']
+    NAME = {'none (crude)': 'None', 'data year': 'Data year',
+            'data year and age band': 'Data year + age',
+            'data year and intraspinal empyema (G06.1)': 'Data year + empyema',
+            'data year and sepsis (A41.-)': 'Data year + sepsis'}
     adj = {r['adjustment']: r for r in rd('adjustment_sets.csv')}
-    fig, ax = plt.subplots(figsize=(3.9, 2.4))
+    fig, ax = plt.subplots(figsize=(5.0, 2.5))
     for i, k in enumerate(ORDER):
         y = len(ORDER) - 1 - i
         r = adj[k]
@@ -174,7 +177,8 @@ if os.path.exists(adj_path):
     ax.xaxis.set_minor_locator(NullLocator())
     ax.xaxis.set_minor_formatter(NullFormatter())
     ax.set_xlim(0.82, 1.5)
-    ax.set_xlabel('Risk ratio, operative vs non-operative (log scale)')
+    ax.set_xlabel('Risk ratio, operative vs nonoperative')
+    ax.set_ylabel('Stratification variables')
     fig.tight_layout()
     save(fig, 'figureS2_stratification_sets')
 

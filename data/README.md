@@ -10,6 +10,7 @@ Expected files, with the column specification in `../analysis/schema/input_schem
 - `arm_totals.csv`
 - `arm_distributions.csv`
 - `hospital_tables.csv`
+- `hospital_hidden_rows.csv`
 - `procedure_family_counts.csv`
 - `secondary_diagnosis_totals.csv`
 - `secondary_diagnosis_distributions.csv`
@@ -22,5 +23,8 @@ Expected files, with the column specification in `../analysis/schema/input_schem
 The first three are required; the analysis skips the sections that depend on any of the others
 if the file is absent.
 
-Once they are in place, `python3 ../analysis/01_analysis.py` regenerates everything in
-`results/`, and `04_verify.py` checks the transcription and the derived quantities.
+Once they are in place, `python3 ../analysis/01_analysis.py` regenerates the results it
+writes in `results/`, and `04_verify.py` checks the transcription and the derived quantities.
+`05b_hospital_reconstruction.py` additionally requires `hospital_hidden_rows.csv`, and
+`06_reported_quantities.py` reads `arm_totals.csv`, `arm_distributions.csv` and the results of
+01 and 05b.

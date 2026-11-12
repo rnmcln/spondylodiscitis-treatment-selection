@@ -1,0 +1,8 @@
+stratification,strata,rr,lo,hi
+None (crude),1,1.1175,1.0526,1.1863
+Data year,6,1.1154,1.0507,1.1841
+Data year and age group (primary analysis),54,1.3131,1.2369,1.3939
+Data year and intraspinal empyema,12,1.053,0.9896,1.1205
+Data year and sepsis,12,0.9287,0.8762,0.9844
+Data year and hospital bed-size category,24,1.0174,0.957,1.0816
+Data year and hospital ownership,18,1.0771,1.0143,1.1438

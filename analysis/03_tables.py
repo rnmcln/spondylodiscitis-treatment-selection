@@ -32,10 +32,10 @@ sens = rd('exposure_sensitivity.csv')
 smr = {x['year']: x for x in rd('smr.csv')}
 
 # ---------------------------------------------------------------- Table 1
-t1 = [['Characteristic', 'Operative (n = 26,130)', 'Non-operative (n = 35,004)']]
+t1 = [['Characteristic', 'Operative (n = 26,130)', 'Nonoperative (n = 35,004)']]
 for row in arm:
     lab, o, c = row['characteristic'], row['operative'], row['non_operative']
-    if lab == 'Episodes, n':
+    if lab == 'Admissions, n':
         continue
     if lab == 'In-hospital deaths, n':
         o, c = thousands(o), thousands(c)
@@ -47,7 +47,7 @@ for row in arm:
     t1.append([lab, str(o), str(c)])
 
 # ---------------------------------------------------------------- Table 2
-t2 = [['Data year', 'Operative, deaths/n (%)', 'Non-operative, deaths/n (%)',
+t2 = [['Data year', 'Operative, deaths/n (%)', 'Nonoperative, deaths/n (%)',
        'Crude RR (95% CI)', 'Age-adjusted RR (95% CI)']]
 for y in [x['year'] for x in rd('annual_summary.csv')]:
     a = ann[y]
@@ -71,8 +71,8 @@ t2.append(['Pooled',
            f"{r(q['mh_rr'])} ({r(q['mh_lo'])}–{r(q['mh_hi'])})"])
 
 # ---------------------------------------------------------------- Table 3
-t3 = [['', 'Episodes, n', 'Operative, n (%)', 'Operative mortality, %',
-       'Non-operative mortality, %']]
+t3 = [['', 'Admissions, n', 'Operative, n (%)', 'Operative mortality, %',
+       'Nonoperative mortality, %']]
 order = {'beds': ['<300', '300-599', '600-999', '1000+'],
          'owner': ['Oeffentlich', 'Freigemeinnuetzig', 'Privat']}
 name = {'<300': '   <300', '300-599': '   300–599', '600-999': '   600–999',
@@ -88,15 +88,15 @@ for dim, head in (('beds', 'Bed-size class'), ('owner', 'Ownership')):
                    r(x['mort_operative_pct']), r(x['mort_nonoperative_pct'])])
 
 # ------------------------------------------------- supplementary table content
-s_age = [['Age band, years', 'Episodes, n', 'Operative, n (%)',
-          'Operative mortality, %', 'Non-operative mortality, %']]
+s_age = [['Age band, years', 'Admissions, n', 'Operative, n (%)',
+          'Operative mortality, %', 'Nonoperative mortality, %']]
 for x in age:
     lab = x['label'].replace('-', '–').replace('80+', '≥80')
     s_age.append([lab, thousands(x['N_total']),
                   f"{thousands(x['N_operative'])} ({r(x['operative_share_pct'], 1)})",
                   r(x['mort_operative_pct']), r(x['mort_nonoperative_pct'])])
 
-s_annual = [['Data year', 'Episodes, n', 'Operative, n (%)', 'Male, %',
+s_annual = [['Data year', 'Admissions, n', 'Operative, n (%)', 'Male, %',
              'Aged ≥80 years, %', 'Mean length of stay, days', 'PCCL 4–6, %',
              'Intensive care, %', 'Ventilation >96 h, %', 'Deaths, n (%)']]
 for y in ann:
@@ -107,8 +107,8 @@ for y in ann:
                      r(a['pccl4_6_pct'], 1), r(a['icu_pct'], 1), r(a['vent96_pct'], 1),
                      f"{thousands(a['deaths'])} ({r(a['mortality_pct'])})"])
 
-s_sens = [['Exposure definition', 'Episodes, n', 'Deaths, n', 'Mortality, %',
-           'Crude RR versus non-operative (95% CI)']]
+s_sens = [['Exposure definition', 'Admissions, n', 'Deaths, n', 'Mortality, %',
+           'Crude RR versus nonoperative (95% CI)']]
 for x in sens:
     s_sens.append([x['definition'].replace('core (primary)', 'Core (primary)')
                    .replace('wide', 'Wide').replace('instrumented only', 'Instrumented only'),
@@ -131,8 +131,8 @@ if os.path.exists(fam_path):
 coh_path = os.path.join(RES, 'cohort_definition.csv')
 s_coh = []
 if os.path.exists(coh_path):
-    s_coh = [['Cohort definition', 'Episodes, n', 'Operative, %', 'Mortality, %',
-              'Operative mortality, %', 'Non-operative mortality, %', 'Crude RR (95% CI)']]
+    s_coh = [['Cohort definition', 'Admissions, n', 'Operative, %', 'Mortality, %',
+              'Operative mortality, %', 'Nonoperative mortality, %', 'Crude RR (95% CI)']]
     LAB = {'principal diagnosis (primary cohort)': 'Principal diagnosis (primary cohort)',
            'secondary diagnosis (overlap included)': 'Secondary diagnosis, overlap included',
            'secondary diagnosis only (overlap removed)': 'Secondary diagnosis only',
@@ -149,7 +149,7 @@ if os.path.exists(coh_path):
 spec_path = os.path.join(RES, 'diagnosis_specificity.csv')
 s_spec = []
 if os.path.exists(spec_path):
-    s_spec = [['Diagnosis code group', 'Episodes, n', 'Share of the cohort, %', 'Deaths, n',
+    s_spec = [['Diagnosis code group', 'Admissions, n', 'Share of the cohort, %', 'Deaths, n',
                'Mortality, %', 'Mortality RR (95% CI)']]
     for x in rd('diagnosis_specificity.csv'):
         rrtxt = ('1 (reference)' if x['lo'] == ''
@@ -161,7 +161,7 @@ ind_path = os.path.join(RES, 'indication_comorbidity.csv')
 s_ind = []
 if os.path.exists(ind_path):
     s_ind = [['Condition (ICD-10-GM secondary diagnosis)', 'Operative, n (%)',
-              'Non-operative, n (%)', 'Prevalence ratio (95% CI)']]
+              'Nonoperative, n (%)', 'Prevalence ratio (95% CI)']]
     for x in rd('indication_comorbidity.csv'):
         if x['prevalence_ratio'] == '':
             s_ind.append([x['condition'], r(x['pct_operative']), r(x['pct_nonoperative']), '—'])
@@ -182,7 +182,7 @@ if os.path.exists(adj_path):
 dis_path = os.path.join(RES, 'discharge_destination.csv')
 s_dis = []
 if os.path.exists(dis_path):
-    s_dis = [['Discharge destination', 'Operative, n (%)', 'Non-operative, n (%)',
+    s_dis = [['Discharge destination', 'Operative, n (%)', 'Nonoperative, n (%)',
               'Whole cohort, n (%)']]
     for x in rd('discharge_destination.csv'):
         if x['N_operative'] == '':

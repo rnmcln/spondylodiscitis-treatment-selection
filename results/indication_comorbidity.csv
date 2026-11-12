@@ -1,5 +1,5 @@
 condition,source,N_operative,pct_operative,N_nonoperative,pct_nonoperative,prevalence_ratio,lo,hi
-Intraspinal / epidural abscess (G06.1),register (single code),5906,22.6,2034,5.81,3.89,3.708,4.08
+Intraspinal / epidural empyema (G06.1),register (single code),5906,22.6,2034,5.81,3.89,3.708,4.08
 Septic shock (R57.2),register (single code),834,3.19,399,1.14,2.8,2.488,3.151
 Sepsis (A41.-),filter query (code group),2585,9.89,1917,5.48,1.806,1.707,1.912
 Paraparesis / paraplegia (G82.-),filter query (code group),1708,6.54,1347,3.85,1.699,1.584,1.821

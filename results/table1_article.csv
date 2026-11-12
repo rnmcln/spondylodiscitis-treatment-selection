@@ -1,0 +1,18 @@
+characteristic,kind,op_n,op_pct,nonop_n,nonop_pct,pr,pr_lo,pr_hi
+Male sex,n,16510,63.2,20811,59.5,,,
+Age <65 years,n,8484,32.5,8306,23.7,,,
+Age 65-79 years,n,11328,43.4,14004,40.0,,,
+Age >=80 years,n,6318,24.2,12693,36.3,,,
+Intraspinal empyema (G06.1),n,5906,22.6,2034,5.8,3.89,3.71,4.08
+Septic shock (R57.2),n,834,3.2,399,1.1,2.8,2.49,3.15
+Sepsis (A41.-),n,2585,9.9,1917,5.5,1.81,1.71,1.91
+Paraparesis or paraplegia (G82.-),n,1708,6.5,1347,3.8,1.7,1.58,1.82
+Type 2 diabetes (E11.-),n,7531,28.8,10129,28.9,1.0,0.97,1.02
+Heart failure (I50.-),n,4565,17.5,7804,22.3,0.78,0.76,0.81
+Chronic kidney disease (N18.-),n,4545,17.4,8457,24.2,0.72,0.7,0.74
+PCCL 4-6,n,12882,49.3,4793,13.7,,,
+Intensive care,n,13187,50.5,3799,10.9,,,
+Mechanical ventilation >96 h,n,1509,5.8,512,1.5,,,
+"Mean length of stay, days",mean,,28.0,,18.1,,,
+Transfer to another acute hospital,n,4841,18.5,8773,25.1,,,
+In-hospital death,n,1841,7.0,2207,6.3,,,

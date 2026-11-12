@@ -1,4 +1,4 @@
-Data year,"Operative, deaths/n (%)","Non-operative, deaths/n (%)",Crude RR (95% CI),Age-adjusted RR (95% CI)
+Data year,"Operative, deaths/n (%)","Nonoperative, deaths/n (%)",Crude RR (95% CI),Age-adjusted RR (95% CI)
 2019,270/4323 (6.25),326/6168 (5.29),1.18 (1.01–1.38),1.41 (1.20–1.64)
 2020,272/4357 (6.24),367/5531 (6.64),0.94 (0.81–1.09),1.10 (0.95–1.28)
 2021,340/4155 (8.18),355/5374 (6.61),1.24 (1.07–1.43),1.45 (1.26–1.68)

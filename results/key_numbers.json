@@ -1,0 +1,328 @@
+{
+ "admissions": 61134,
+ "operative_n": 26130,
+ "operative_pct": 42.7,
+ "deaths": 4048,
+ "mortality_pct": 6.62,
+ "op_mort_pct": 7.05,
+ "nonop_mort_pct": 6.3,
+ "crude_rr": [
+  1.12,
+  1.05,
+  1.19
+ ],
+ "annual_admissions": {
+  "2019": 10491,
+  "2020": 9888,
+  "2021": 9529,
+  "2022": 9898,
+  "2023": 10246,
+  "2024": 11082
+ },
+ "grid_admissions": 61048.0,
+ "outside_grid_admissions": 86.0,
+ "share_admissions_lt300_pct": 26.0,
+ "share_operations_ge600_pct": 49.3,
+ "op_share_by_bed": {
+  "<300": 28.2,
+  "300-599": 40.1,
+  "600-999": 46.8,
+  "1000+": 63.7
+ },
+ "op_share_by_age": {
+  "<30": 27.9,
+  "30-39": 51.8,
+  "40-49": 52.5,
+  "50-54": 52.6,
+  "55-59": 51.8,
+  "60-64": 50.4,
+  "65-74": 46.3,
+  "75-79": 42.3,
+  "80+": 33.2
+ },
+ "beds_rr": [
+  1.0174,
+  0.957,
+  1.0816
+ ],
+ "beds_rr_range": [
+  0.9998,
+  1.0307
+ ],
+ "owner_rr_range": [
+  1.0622,
+  1.0893
+ ],
+ "owner_rr": [
+  1.0771,
+  1.0143,
+  1.1438
+ ],
+ "age_adjusted_rr": [
+  1.3131,
+  1.2369,
+  1.3939
+ ],
+ "std_op": 7.73,
+ "std_nonop": 5.89,
+ "std_diff": [
+  1.84,
+  1.43,
+  2.25
+ ],
+ "table1": [
+  {
+   "characteristic": "Male sex",
+   "kind": "n",
+   "op_n": 16510,
+   "op_pct": 63.2,
+   "nonop_n": 20811,
+   "nonop_pct": 59.5,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Age <65 years",
+   "kind": "n",
+   "op_n": 8484,
+   "op_pct": 32.5,
+   "nonop_n": 8306,
+   "nonop_pct": 23.7,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Age 65-79 years",
+   "kind": "n",
+   "op_n": 11328,
+   "op_pct": 43.4,
+   "nonop_n": 14004,
+   "nonop_pct": 40.0,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Age >=80 years",
+   "kind": "n",
+   "op_n": 6318,
+   "op_pct": 24.2,
+   "nonop_n": 12693,
+   "nonop_pct": 36.3,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Intraspinal empyema (G06.1)",
+   "kind": "n",
+   "op_n": 5906,
+   "op_pct": 22.6,
+   "nonop_n": 2034,
+   "nonop_pct": 5.8,
+   "pr": 3.89,
+   "pr_lo": 3.71,
+   "pr_hi": 4.08
+  },
+  {
+   "characteristic": "Septic shock (R57.2)",
+   "kind": "n",
+   "op_n": 834,
+   "op_pct": 3.2,
+   "nonop_n": 399,
+   "nonop_pct": 1.1,
+   "pr": 2.8,
+   "pr_lo": 2.49,
+   "pr_hi": 3.15
+  },
+  {
+   "characteristic": "Sepsis (A41.-)",
+   "kind": "n",
+   "op_n": 2585,
+   "op_pct": 9.9,
+   "nonop_n": 1917,
+   "nonop_pct": 5.5,
+   "pr": 1.81,
+   "pr_lo": 1.71,
+   "pr_hi": 1.91
+  },
+  {
+   "characteristic": "Paraparesis or paraplegia (G82.-)",
+   "kind": "n",
+   "op_n": 1708,
+   "op_pct": 6.5,
+   "nonop_n": 1347,
+   "nonop_pct": 3.8,
+   "pr": 1.7,
+   "pr_lo": 1.58,
+   "pr_hi": 1.82
+  },
+  {
+   "characteristic": "Type 2 diabetes (E11.-)",
+   "kind": "n",
+   "op_n": 7531,
+   "op_pct": 28.8,
+   "nonop_n": 10129,
+   "nonop_pct": 28.9,
+   "pr": 1.0,
+   "pr_lo": 0.97,
+   "pr_hi": 1.02
+  },
+  {
+   "characteristic": "Heart failure (I50.-)",
+   "kind": "n",
+   "op_n": 4565,
+   "op_pct": 17.5,
+   "nonop_n": 7804,
+   "nonop_pct": 22.3,
+   "pr": 0.78,
+   "pr_lo": 0.76,
+   "pr_hi": 0.81
+  },
+  {
+   "characteristic": "Chronic kidney disease (N18.-)",
+   "kind": "n",
+   "op_n": 4545,
+   "op_pct": 17.4,
+   "nonop_n": 8457,
+   "nonop_pct": 24.2,
+   "pr": 0.72,
+   "pr_lo": 0.7,
+   "pr_hi": 0.74
+  },
+  {
+   "characteristic": "PCCL 4-6",
+   "kind": "n",
+   "op_n": 12882,
+   "op_pct": 49.3,
+   "nonop_n": 4793,
+   "nonop_pct": 13.7,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Intensive care",
+   "kind": "n",
+   "op_n": 13187,
+   "op_pct": 50.5,
+   "nonop_n": 3799,
+   "nonop_pct": 10.9,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Mechanical ventilation >96 h",
+   "kind": "n",
+   "op_n": 1509,
+   "op_pct": 5.8,
+   "nonop_n": 512,
+   "nonop_pct": 1.5,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Mean length of stay, days",
+   "kind": "mean",
+   "op_n": "",
+   "op_pct": 28.0,
+   "nonop_n": "",
+   "nonop_pct": 18.1,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "Transfer to another acute hospital",
+   "kind": "n",
+   "op_n": 4841,
+   "op_pct": 18.5,
+   "nonop_n": 8773,
+   "nonop_pct": 25.1,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  },
+  {
+   "characteristic": "In-hospital death",
+   "kind": "n",
+   "op_n": 1841,
+   "op_pct": 7.0,
+   "nonop_n": 2207,
+   "nonop_pct": 6.3,
+   "pr": "",
+   "pr_lo": "",
+   "pr_hi": ""
+  }
+ ],
+ "figure2": [
+  {
+   "bed_size": "<300",
+   "admissions": 15881,
+   "operative": 4476,
+   "operative_share_pct": 28.19,
+   "share_lo": 27.49,
+   "share_hi": 28.89,
+   "share_min": 27.94,
+   "share_max": 28.39,
+   "op_mort_pct": 4.6,
+   "op_lo": 4.03,
+   "op_hi": 5.26,
+   "nonop_mort_pct": 4.55,
+   "nonop_lo": 4.18,
+   "nonop_hi": 4.95
+  },
+  {
+   "bed_size": "300-599",
+   "admissions": 21852,
+   "operative": 8765,
+   "operative_share_pct": 40.11,
+   "share_lo": 39.46,
+   "share_hi": 40.76,
+   "share_min": 40.11,
+   "share_max": 40.11,
+   "op_mort_pct": 7.12,
+   "op_lo": 6.6,
+   "op_hi": 7.68,
+   "nonop_mort_pct": 6.53,
+   "nonop_lo": 6.12,
+   "nonop_hi": 6.97
+  },
+  {
+   "bed_size": "600-999",
+   "admissions": 11813,
+   "operative": 5528,
+   "operative_share_pct": 46.83,
+   "share_lo": 45.9,
+   "share_hi": 47.7,
+   "share_min": 46.2,
+   "share_max": 47.38,
+   "op_mort_pct": 7.91,
+   "op_lo": 7.22,
+   "op_hi": 8.65,
+   "nonop_mort_pct": 8.11,
+   "nonop_lo": 7.45,
+   "nonop_hi": 8.8
+  },
+  {
+   "bed_size": "1000+",
+   "admissions": 11502,
+   "operative": 7328,
+   "operative_share_pct": 63.71,
+   "share_lo": 62.83,
+   "share_hi": 64.58,
+   "share_min": 63.29,
+   "share_max": 64.14,
+   "op_mort_pct": 7.67,
+   "op_lo": 7.08,
+   "op_hi": 8.3,
+   "nonop_mort_pct": 7.96,
+   "nonop_lo": 7.17,
+   "nonop_hi": 8.81
+  }
+ ]
+}

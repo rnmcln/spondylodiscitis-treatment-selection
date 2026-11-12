@@ -3,7 +3,7 @@
   [
    "Characteristic",
    "Operative (n = 26,130)",
-   "Non-operative (n = 35,004)"
+   "Nonoperative (n = 35,004)"
   ],
   [
    "Male, %",
@@ -31,7 +31,7 @@
    "18.1"
   ],
   [
-   "Intraspinal abscess, %",
+   "Intraspinal empyema, %",
    "22.6",
    "5.8"
   ],
@@ -95,7 +95,7 @@
   [
    "Data year",
    "Operative, deaths/n (%)",
-   "Non-operative, deaths/n (%)",
+   "Nonoperative, deaths/n (%)",
    "Crude RR (95% CI)",
    "Age-adjusted RR (95% CI)"
   ],
@@ -152,10 +152,10 @@
  "table3": [
   [
    "",
-   "Episodes, n",
+   "Admissions, n",
    "Operative, n (%)",
    "Operative mortality, %",
-   "Non-operative mortality, %"
+   "Nonoperative mortality, %"
   ],
   [
    "Bed-size class",
@@ -224,10 +224,10 @@
  "s_age": [
   [
    "Age band, years",
-   "Episodes, n",
+   "Admissions, n",
    "Operative, n (%)",
    "Operative mortality, %",
-   "Non-operative mortality, %"
+   "Nonoperative mortality, %"
   ],
   [
    "<30",
@@ -296,7 +296,7 @@
  "s_annual": [
   [
    "Data year",
-   "Episodes, n",
+   "Admissions, n",
    "Operative, n (%)",
    "Male, %",
    "Aged ≥80 years, %",
@@ -382,10 +382,10 @@
  "s_sens": [
   [
    "Exposure definition",
-   "Episodes, n",
+   "Admissions, n",
    "Deaths, n",
    "Mortality, %",
-   "Crude RR versus non-operative (95% CI)"
+   "Crude RR versus nonoperative (95% CI)"
   ],
   [
    "Core (primary)",
@@ -537,11 +537,11 @@
  "s_coh": [
   [
    "Cohort definition",
-   "Episodes, n",
+   "Admissions, n",
    "Operative, %",
    "Mortality, %",
    "Operative mortality, %",
-   "Non-operative mortality, %",
+   "Nonoperative mortality, %",
    "Crude RR (95% CI)"
   ],
   [
@@ -602,7 +602,7 @@
  "s_spec": [
   [
    "Diagnosis code group",
-   "Episodes, n",
+   "Admissions, n",
    "Share of the cohort, %",
    "Deaths, n",
    "Mortality, %",
@@ -629,11 +629,11 @@
   [
    "Condition (ICD-10-GM secondary diagnosis)",
    "Operative, n (%)",
-   "Non-operative, n (%)",
+   "Nonoperative, n (%)",
    "Prevalence ratio (95% CI)"
   ],
   [
-   "Intraspinal / epidural abscess (G06.1)",
+   "Intraspinal / epidural empyema (G06.1)",
    "5906 (22.60)",
    "2034 (5.81)",
    "3.89 (3.71–4.08)"
@@ -709,7 +709,7 @@
    "primary analysis, 54 strata"
   ],
   [
-   "Data year and intraspinal abscess (G06.1)",
+   "Data year and intraspinal empyema (G06.1)",
    "1.05 (0.99–1.12)",
    "12 strata (condition x year)"
   ],
@@ -723,7 +723,7 @@
   [
    "Discharge destination",
    "Operative, n (%)",
-   "Non-operative, n (%)",
+   "Nonoperative, n (%)",
    "Whole cohort, n (%)"
   ],
   [
@@ -793,7 +793,7 @@
    "Bounding factor"
   ],
   [
-   "Intraspinal abscess (G06.1)",
+   "Intraspinal empyema (G06.1)",
    "3.89",
    "1.39",
    "1.26"
