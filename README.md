@@ -1,8 +1,10 @@
-# Operative treatment and in-hospital mortality in pyogenic spondylodiscitis
+# Surgical treatment of pyogenic spondylodiscitis in Germany
 
-Query protocol, analysis code and derived results for a national analysis of 61,134 German
-discharge episodes with a principal diagnosis of pyogenic spondylodiscitis (ICD-10-GM
-M46.2–M46.5), data years 2019 to 2024.
+Query protocol, analysis code and derived results for the article *Surgical Treatment of
+Pyogenic Spondylodiscitis in Germany: A Nationwide Analysis of Patient Selection, Hospital
+Size, and In-Hospital Mortality*, a national analysis of 61,134 German discharge episodes
+with a principal diagnosis of pyogenic spondylodiscitis (ICD-10-GM M46.2–M46.5), data years
+2019 to 2024.
 
 ## Study summary
 
@@ -181,6 +183,7 @@ and `07_article_figures.py` require matplotlib (see `requirements.txt`).
 
 ## Version history
 
+- **1.1.1.** Title of the accompanying article updated. Code and results are identical to 1.1.0.
 - **1.1.0.** Adds the cell-level reconstruction of the hidden hospital cells
   (`05b_hospital_reconstruction.py`), the hospital-stratified risk ratios, article tables, figure
   data and key numbers (`06_reported_quantities.py`) and the article figures
